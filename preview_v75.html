@@ -892,18 +892,25 @@ function randRight() {
 <script>var BLANK_URI='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPCEtLSBXYWphaCBrb3NvbmcgPSBkaWNlX2JnLnhtbCBhc2xpIChlZmVrIHRla2FuIHRvbWJvbCBtZW51OiBzdGF0ZV9wcmVzc2VkKSAtLT4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIwIiByeT0iMjAiIGZpbGw9IiNkZmRmZGYiIC8+Cjwvc3ZnPgo=';var CHECKER_URI='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAIFElEQVRIx62XyXNc1RXGv/Pm93pSd6tbUktya7YlecAqGeyQVAgEpxJWYajsskmxCPkr9E8klUVWqSyoJAyBglCGMJgABk9Cso0sW6PVk1rdr7tfv/ndmwWSy6EMFIZvfe/53fudc+qeS/hhJAJIEih3DMfSf+h5YfjsLx99HD9zH3HTXiK2k9hJvpN7Nf5+76tiW94mUCgd7HwGz9Af8SchR70SgWROnIhRCMAnUPQNUAIQB1DUoA2PYXxo/PjQz5u/LZ29OnM93oSF0bAw+ZBxYkC5Y1T1K6k6B7clAIoCRQkRqpf1i5lThZMjekY9RCJJUkOuilX1Jm/xbQBdArGvuW0aQH8W2fR84uRI7onkwx/OfhK/4H4B2/dRTjbQ80hiLPtGYU5bSr5LIfkSgP4kkvmMmB5QZ+h066nSE5VpazRSmGCUY/XspfzF+Hu51+R140MOXiNQ+BWwug+ODWJQPzZyZMScb2RXwjsod1sIeYika8BUOsQUlgBBAkASgLEkUoXZvumTuadjzy09u1hc0tfQ5R4yPN47fWZ0Ynbm6LH+F0f/qi0nX+Yu3yZQcA9YB5BQoMhFKsbzE9nhtaGb6p7Xgct8iCRAIgFGPeZJTbkBjhAAkwCk88glJ4uj49bjZuFC7AZWzBKc0IcqyridLkt3nqmeeCz1aKr4l2lFv5j6G4/4DoEiCZIQItQAaBp0YUgbTMRHtPxuzBRs1wMDgyrIiIkqcps5S7kT26CQugACCQAkSIKsSVKgheQGAezQQyd0QCGhG7pwjADhY3zkrCf+bqxx1JJWjZdcuOVJTNI2tlUAig5N7FPziaDgG6ZgwYsCcA6ogogenkBqPV1TStoGAI9AXADQbaLpbm+Xy+krGfOwOIhBI4OUbEASRLgsQMlp4jO+gnNPfjC2/vyN3/uz1rOqrA69gBf0/RyLcSTEXiOTtPO21uYOAh4BBCiCjEyQ4PqeUYUj1AGEBxWpABA0S4+KjVFl2hjrTeQ1PUwE5CGAHwXwWQgvCtBWuuQd6eQymdh4upp2gwovn+Pn4has9CQm4r8afPJo9LQ/s5i9KdXdNgAgo8dx3JmIpt+Z/lhfTp0jJux96TKwacFqX/UX28rHiv+TrTO14ydm5wZ+3T/+/unPksu0jrprwYkClLsmLsRWgLM0qUB+vtgciM7cOrP6Bt5UCigY2eF0fjO/pljMRcQZRCLokoJsqyfUS7ESQurc24MBANuG3S5FZeeL5mqnvtKqHF47jIlDhZw9YWkWc+CxAB4L4YUBLNkGn/Ayo/5gPromtEpuxZ1X5gaOPTX18PUfr+ZWgxK6oQdNkFHUezG/erQ59K/xV4S6cnEBC/4BGAyMe/C8FlpOBZVwG9uhVXVbs7VZZWpkqN8+ZCkd7sCLArg8hB8FsHWb0kN67+HNSTW4yXcPpyYH0r+JzV+evGbccffgswhxRcWUPIRTH528mX1r8J/kiKsLWGB3wffIY2CODTuqYZd7O2FnZnNWmOw/lOsWLa0lWPBCHx4P4Uchgl5PHDUKqckrh6N8Ty6/+1x14mpuVao7bXAAGS2OE84E5l6f+0T/NP0KMaouYAH3AwOAz8AcBzZqvCZ0dhxzdnNGHBnu6zNHTbXNbHhRgIBHCCkE7wuVscZIXJf11MVfLKbXlJLQ9h1IJKBfT2O+Pu1M/WP23/K68Q6BrHtz/FXxfbhvwZLLqFBQRmvenEtmTxqFSnZX7AQufBYgYAy25lCQ9uWu4UiL01/oNdYil/nQRQVFLYfTNx6qDrw2+pLYkC8vYCH4JvCBAg7OLHSMBhrIVHrdR4yTg/6cnamJTdihB59F8KMQzVRLqqb3xJJRl7rMBeMcCVnHlDyIM++dup16L/+i4IhrB/n9NjDbb3a5i67hhz6b2JuSpiYOFaujNdUMu/BYiAARHHjUUi3B5j4FLIJIhKySwPFwnB9/9aGPjMvpV4gJu/cGF77lgXcBVAL4u0tYMt9a+8+S+Hf92lxtOszFUlAECRFjcFkAi1zyeQAGBlEQkZB1DJUHuup67DoCan418LeBGYAWgIoJ0zzPzlc+O//5pbG3R6pTfAhxWYNIAjg4OOfg4CAAKknokWIYWO831S1jBUD3u4Kxb3eDgTU2sNE9Z757q/tmeOPIzljQqyahCNL/jyMkQJVk5KMepNbSm0JL3gDgPQiY75+44cCxl/B5e3llZeXQYqExJGahizIE0N2FAgiGrKDQzIfJm+kVssQKgOhBwNjf2AbQqaDqXm5fvUMX5NJYZ5AlZQMSiXdtFkiALivI1bOesZZYB4NJIP6gYAbAAtDswnKvB9fNjUvllbEbRbtX/tJuAoEDkEhEQtQQbyTaYl0pA3DuF1D4DiOsC8Dk4M4a1u2lrRvriU9TtQLPQpcUEAgEQBIIOleht3WLHLG5/wh9L3AEoAPAaqDhLznLNetzb6vYKbC49mV1AwSRBBjQoDtaFwFZ+259L/DBrTs+fP8WbluV9drO4Haf26f2ICZqUAUJMUlDNkoi3oyZnPPWDwX2ATQBWGWU3Kvl5a3kpWTlBEYxnMiioKdRjOcwYQ5H+lZ8Db6we7/COphA8B3tbgIomTDpkn3l1o/eOvXR3OzxlH5Ky7YSHRSsPI6cn15WriXeJp/2vi6Q9AD/pC6ALQ9et4RS9fbydnnmz9MbP70+cDrIukl1I7ajf5J+XVtJ/JcYdX9IMNsvMnsXtbLWNW4nP8gvJpfjL0dqGCNXMKWGskMRte/z67ir/wGO5dh4VjHKGgAAAABJRU5ErkJggg==';var NOOLL_URI='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAQAAACROWYpAAAAHklEQVQ4y2P8z0A+YGIY1TyqeVTzqOZRzaOah7FmAPveATs+bSjtAAAAAElFTkSuQmCC';</script><script>
 
 document.addEventListener('click', function(e){
-  function syn(el){
+  var t = e.target;
+  var sl = t.closest && t.closest('#sleep');
+  if (sl) {
+    togleSleep({ stopPropagation: function(){} });
+    return;
+  }
+  if (t.classList && t.classList.contains('option')) {
+    var opts = document.querySelectorAll('.option');
+    var n = Array.prototype.indexOf.call(opts, t) + 1;
+    setDice(n);
+    return;
+  }
+  var game = document.getElementById('c-game');
+  if (game && game.offsetLeft < 10) {
     var ev = new Event('touchend');
     ev.changedTouches = [{pageX: e.pageX, pageY: e.pageY}];
     ev.preventDefault = function(){};
-    el.ontouchend(ev);
+    game.ontouchend(ev);
   }
-  var t = e.target;
-  var sl = t.closest && t.closest('#sleep');
-  if (sl && sl.ontouchend) { syn(sl); return; }
-  if (t.ontouchend) { syn(t); return; }
-  var game = document.getElementById('c-game');
-  if (game && game.ontouchend && game.offsetLeft < 10) syn(game);
 });
 
 </script>
