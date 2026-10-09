@@ -844,7 +844,7 @@ function randRight() {
 
         // Menu 1/2/3 dadu: visual asli (tombol wajah dadu 1/2/3),
         // fungsi v7.5: tiga dadu selalu tampil (komposisi).
-        function setDice(num) { window.__dbg && __dbg("setDice"+num);
+        function setDice(num) {
             setDiceCount(3);
             showGame();
         }
@@ -916,12 +916,5 @@ document.addEventListener('click', function(e){
 });
 
 </script>
-<script>
-window.__dbg = function(msg){
-  var d = document.getElementById('dbg') || (function(){var x=document.createElement('div');x.id='dbg';x.style.cssText='position:fixed;top:28px;left:0;z-index:9999;background:rgba(0,0,0,.8);color:#0f0;font:12px monospace;padding:4px;max-width:100%';document.body.appendChild(x);return x;})();
-  d.textContent += ' | ' + msg;
-};
-window.onerror = function(m){ __dbg('ERR ' + m); };
-window.addEventListener('load', function(){ __dbg('load: jq=' + (typeof $) + ' OnStart=' + typeof OnStart); });
-</script></body>
+</body>
 </html>
