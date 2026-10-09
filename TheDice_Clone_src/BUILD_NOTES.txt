@@ -1,0 +1,27 @@
+TheDice Clone v1.4 (net.dzyga.android.thedice) - rebuild 100% dari dekompilasi
+============================================================================
+
+Sumber: the-dice.apk asli (v1.4, versionCode 5) - hasil dekompilasi jadx.
+
+APA YANG DIBANGUN ULANG:
+- classes.dex: 8 file Java hasil dekompilasi jadx dikompilasi ulang
+  (javac + d8, min-api 14). Struktur kelas dan logika identik dengan asli.
+
+APA YANG DIPERTAHANKAN BYTE-PER-BYTE (43 file identik):
+- Semua layout XML, drawable, gambar, string, AndroidManifest,
+  resources.arsc, assets - langsung dari APK asli.
+- Jadi tampilan 100% identik karena pakai resource yang sama persis.
+
+VERIFIKASI:
+- aapt badging: package/versionCode/versionName/minSdk/targetSdk sama
+- 43/45 file APK identik byte-per-byte dengan asli
+- Yang beda hanya classes.dex (rekompilasi) dan tanda tangan (keystore sendiri)
+
+LANGKAH BUILD (untuk referensi):
+1. javac -classpath android-34/android.jar -d build/classes $(find src -name "*.java")
+2. d8 --release --lib android-34/android.jar --min-api 14 --output build $(find build/classes -name "*.class")
+3. Ganti classes.dex di salinan APK asli (buang tanda tangan lama), zipalign -f -p 4
+4. apksigner sign --ks chinchiro.keystore --ks-pass pass:android --ks-key-alias dadu
+
+TANDA TANGAN: keystore chinchiro (CN=Dadu Aja, O=Darmawan, L=Bekasi)
+Kalau APK asli dari dzyga masih terpasang di HP, uninstall dulu (tanda tangan beda).
